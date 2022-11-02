@@ -5,7 +5,7 @@ import {useState} from "react";
 function App() {
 	const challenges = [
 		// ["NBA Points", "Mr. Schlenker", "NBA Points Challenge - CSML 1022.pdf"],
-		["Polling", "Andrew Young", "Polling Data Challenge - CSML 1022.pdf", 33],
+		["Polling", "Andrew Young", "Political Polling Challenge - CSML 1022.pdf", 33],
 		["Boston Bruins NHL data ", "Cailyn Murphy"],
 		["Bears Vs Packers Rivalry", "Brendan Poirier"],
 		["top Billboard charts singles", "Nick Ruddy"],
