@@ -32,7 +32,7 @@ function App() {
 		if (lineCount > currentChallenge[3]) {
 			setCodeResponse("Your code has more lines than needed. Keep trying!");
 		}
-		else if (lineCount < currentChallenge[3]) {
+		else if (lineCount > currentChallenge[3]) {
 			setCodeResponse("Your code is even better the solution! Great job! Go show it to Mr. Schlenker!");
 		}
 		else {
