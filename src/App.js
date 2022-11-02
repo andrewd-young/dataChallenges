@@ -27,18 +27,15 @@ function App() {
 		let code = document.getElementById("codeInput").value;
 		//count lines of code
 		let lines = code.split(`
-`).length
-		let lineCount = lines.length;
-		if (lineCount > currentChallenge[3]) {
+`).length;
+		if (lines > currentChallenge[3]) {
 			setCodeResponse("Your code has more lines than needed. Keep trying!");
-		}
-		else if (lineCount > currentChallenge[3]) {
+		} else if (lines < currentChallenge[3]) {
 			setCodeResponse("Your code is even better the solution! Great job! Go show it to Mr. Schlenker!");
-		}
-		else {
+		} else {
 			setCodeResponse("You found the optimal solution! Great job!");
 		}
-	}
+	};
 
 	return (
 		<div>
@@ -76,7 +73,10 @@ function App() {
 						<button onClick={compareCode} type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
 							Compare
 						</button>
-						<p className="float-right font-normal text-gray-700 dark:text-gray-400">{codeResponse}</p>
+						<p className="float-right font-normal text-gray-700 dark:text-gray-400"></p>
+						<div class="float-right p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
+							{codeResponse}
+						</div>
 					</div>
 				</div>
 			</div>
