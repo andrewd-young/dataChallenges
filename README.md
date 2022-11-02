@@ -1,2 +1,2 @@
 # PoCoS Challenges
-A free alternative to Quizlet who are now charging for their learn feature. 
+A website to compile and share data challenges created in Mr. Schlenker's Post AP Computer Science class 2022-2023.
