@@ -29,9 +29,9 @@ function App() {
 		let lines = code.split(`
 `).length;
 		if (lines > currentChallenge[3]) {
-			setCodeResponse("Your code has more lines than needed. Keep trying!");
+			setCodeResponse("Your code has " + (lines - currentChallenge[3]) + " more lines than needed. Keep trying!");
 		} else if (lines < currentChallenge[3]) {
-			setCodeResponse("Your code is even better the solution! Great job! Go show it to Mr. Schlenker!");
+			setCodeResponse("Your code has " + (currentChallenge[3] - lines) + " fewer lines than the solution, great job! Go show it to Mr. Schlenker!");
 		} else {
 			setCodeResponse("You found the optimal solution! Great job!");
 		}
